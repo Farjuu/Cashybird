@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="360dp"
+    android:layout_gravity="center"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:background="@drawable/gameoverback"
+    android:keepScreenOn="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_width="@dimen/space75"
+            android:layout_height="@dimen/space75"
+            android:background="@drawable/tick"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Congratulations! +1 added to your coins"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#1B5E20"
+            android:textSize="@dimen/text_size_20"
+            android:padding="10dp"
+            android:fontFamily="monospace"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Video Reward(coins+1) added successfully to your account!"
+            android:layout_marginTop="10dp"
+            android:textColor="#1B5E20"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_18"
+            android:fontFamily="monospace" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_capsule"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/okayButton"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/layout_background_popup"
+            android:text="Okay"/>
+
+    </LinearLayout>
+
+</LinearLayout>

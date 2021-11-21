@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back4"
+    android:keepScreenOn="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/casytxt"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/cashybirdtext" />
+
+    <ImageButton
+        android:id="@+id/imageBirdStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bird_frame1" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewStartTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/startText"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:fontFamily="@font/fredoka_one"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewStartTitle"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="@dimen/space25"
+            android:layout_marginRight="@dimen/space25"
+            android:background="@drawable/signupredshape"
+            android:fontFamily="@font/fredoka_one"
+            android:onClick="startActivitySignup"
+            android:text="@string/sign_up"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:background="@drawable/loginblueshape"
+
+            android:fontFamily="@font/fredoka_one"
+            android:onClick="startActivityLogin"
+            android:text="@string/login"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

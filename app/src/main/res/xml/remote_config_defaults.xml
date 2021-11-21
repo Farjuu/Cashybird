@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- START xml_defaults -->
+<defaultsMap>
+    <entry>
+        <key>leader_board_heading</key>
+        <value>Global Weekly Gems</value>
+    </entry>
+    <entry>
+        <key>leader_board_footer</key>
+        <value>Every week top 10 gems will be announced</value>
+    </entry>
+    <entry>
+        <key>player1_name</key>
+        <value>...</value>
+    </entry>
+    <entry>
+        <key>player1_score</key>
+        <value>...</value>
+    </entry>
+    <entry>
+        <key>player1_payouts</key>
+        <value>...</value>
+    </entry>
+
+    <entry>
+        <key>player2_name</key>
+        <value>...</value>
+    </entry>
+    <entry>
+        <key>player2_score</key>
+        <value>...</value>
+    </entry>
+    <entry>
+        <key>player2_payouts</key>
+        <value>...</value>
+    </entry>
+
+    <entry>
+        <key>player3_name</key>
+        <value>...</value>
+    </entry>
+    <entry>
+        <key>player3_score</key>
+        <value>...</value>
+    </entry>
+    <entry>
+        <key>player3_payouts</key>
+        <value>...</value>
+    </entry>
+
+    <entry>
+        <key>player4_name</key>
+        <value>...</value>
+    </entry>
+    <entry>
+        <key>player4_score</key>
+        <value>...</value>
+    </entry>
+    <entry>
+        <key>player4_payouts</key>
+        <value>...</value>
+    </entry>
+
+    <entry>
+        <key>player5_name</key>
+        <value>...</value>
+    </entry>
+    <entry>
+        <key>player5_score</key>
+        <value>...</value>
+    </entry>
+    <entry>
+        <key>player5_payouts</key>
+        <value>...</value>
+    </entry>
+
+    <entry>
+        <key>player6_name</key>
+        <value>...</value>
+    </entry>
+    <entry>
+        <key>player6_score</key>
+        <value>...</value>
+    </entry>
+    <entry>
+        <key>player6_payouts</key>
+        <value>...</value>
+    </entry>
+
+    <entry>
+        <key>player7_name</key>
+        <value>...</value>
+    </entry>
+    <entry>
+        <key>player7_score</key>
+        <value>...</value>
+    </entry>
+    <entry>
+        <key>player7_payouts</key>
+        <value>...</value>
+    </entry>
+
+    <entry>
+        <key>player8_name</key>
+        <value>...</value>
+    </entry>
+    <entry>
+        <key>player8_score</key>
+        <value>...</value>
+    </entry>
+    <entry>
+        <key>player8_payouts</key>
+        <value>...</value>
+    </entry>
+
+    <entry>
+        <key>player9_name</key>
+        <value>...</value>
+    </entry>
+    <entry>
+        <key>player9_score</key>
+        <value>...</value>
+    </entry>
+    <entry>
+        <key>player9_payouts</key>
+        <value>...</value>
+    </entry>
+
+    <entry>
+        <key>player10_name</key>
+        <value>...</value>
+    </entry>
+    <entry>
+        <key>player10_score</key>
+        <value>...</value>
+    </entry>
+    <entry>
+        <key>player10_payouts</key>
+        <value>...</value>
+    </entry>
+
+</defaultsMap>
+    <!-- END xml_defaults -->

@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bluerectangle"
+    android:keepScreenOn="true">
+
+        <LinearLayout
+            android:id="@+id/coinsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="227dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/fredoka_one"
+                android:text="@string/total_earned_coins"
+                android:textColor="@color/colorWhite"
+                android:textSize="30sp"
+                android:textStyle="normal">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/totalCoinsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/fredoka_one"
+                android:text="01"
+                android:textColor="@color/colorWhite"
+                android:textSize="45sp"
+                android:textStyle="normal">
+
+            </TextView>
+
+
+
+            <Button
+                android:id="@+id/withdrawCheckButton"
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:text="Withdraw"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/poppins_medium"
+                android:background="@drawable/ic_group_2242"
+                android:gravity="center"
+                android:onClick="checkIsWithdrawEligible">
+
+            </Button>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@id/coinsLayout"
+        android:id="@+id/iv_pay_img_layout"
+        android:background="@drawable/white_rectangle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/space20"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_payment_img"
+            android:layout_width="180dp"
+            android:layout_height="70dp"
+            android:background="@drawable/logo_paypal">
+        </ImageView>
+
+    </LinearLayout>
+
+
+    <ScrollView
+
+        android:layout_below="@id/iv_pay_img_layout"
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:weightSum="2"
+                android:padding="15dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/withdrawOption1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/option1"
+                    android:textColor="@color/colorBlueDark"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/text_size_18"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_medium">
+
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/withdrawOption1_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/option1_value"
+                    android:textColor="@color/colorBlueDark"
+                    android:textStyle="bold"
+                    android:layout_gravity="end"
+                    android:textSize="@dimen/text_size_18"
+                    android:textAlignment="textEnd"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_medium">
+                </TextView>
+
+            </LinearLayout>
+            <View
+                android:padding="1dp"
+                android:layout_gravity="center"
+                android:layout_width="355dp"
+                android:layout_height="1dp"
+                android:background="@color/colorGray">
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:weightSum="2"
+                android:padding="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/withdrawOption2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/option2"
+                    android:textColor="@color/colorBlueDark"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/text_size_18"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_medium">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/withdrawOption2_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/option2_value"
+                    android:textColor="@color/colorBlueDark"
+                    android:textStyle="bold"
+                    android:layout_gravity="end"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_18"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_medium">
+                </TextView>
+
+
+            </LinearLayout>
+
+
+            <View
+                android:padding="1dp"
+                android:layout_gravity="center"
+                android:layout_width="355dp"
+                android:layout_height="1dp"
+                android:background="@color/colorGray">
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:weightSum="2"
+                android:padding="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/withdrawOption3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/option3"
+                    android:textColor="@color/colorBlueDark"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/text_size_18"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_medium">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/withdrawOption3_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/option3_value"
+                    android:textColor="@color/colorBlueDark"
+                    android:textStyle="bold"
+                    android:layout_gravity="end"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_18"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_medium">
+                </TextView>
+
+
+            </LinearLayout>
+
+
+            <View
+                android:padding="1dp"
+                android:layout_gravity="center"
+                android:layout_width="355dp"
+                android:layout_height="1dp"
+                android:background="@color/colorGray">
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:weightSum="2"
+                android:padding="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/withdrawOption4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/option4"
+                    android:textColor="@color/colorBlueDark"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/text_size_18"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_medium">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/withdrawOption4_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/option4_value"
+                    android:textColor="@color/colorBlueDark"
+                    android:textStyle="bold"
+                    android:layout_gravity="end"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_18"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_medium">
+                </TextView>
+
+
+            </LinearLayout>
+
+
+            <View
+                android:padding="1dp"
+                android:layout_gravity="center"
+                android:layout_width="355dp"
+                android:layout_height="1dp"
+                android:background="@color/colorGray">
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="@dimen/space100"
+                android:weightSum="2"
+                android:padding="15dp"
+                android:paddingBottom="0dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/withdrawOption5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/option5"
+                    android:textColor="@color/colorBlueDark"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/text_size_18"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_medium">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/withdrawOption5_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/option5_value"
+                    android:textColor="@color/colorBlueDark"
+                    android:textStyle="bold"
+                    android:layout_gravity="end"
+                    android:textAlignment="textEnd"
+                    android:textSize="@dimen/text_size_18"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_medium">
+                </TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

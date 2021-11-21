@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:keepScreenOn="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space10"
+            android:background="@color/colorPrimaryDark">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Information &amp; Support"
+                android:layout_gravity="start"
+                android:padding="@dimen/space20"
+                android:textSize="@dimen/text_size_20"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"/>
+
+        </LinearLayout>
+
+        <!--This is Main content Layout-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingStart="@dimen/space20"
+            android:paddingLeft="@dimen/space20"
+            android:paddingRight="@dimen/space20"
+            android:paddingEnd="@dimen/space20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Got Any Queries?"
+                android:layout_gravity="start"
+                android:textSize="@dimen/text_size_20"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlueDark"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In case of questions that you may have related to score/ coins / transactions / payments / any others that you may need clarifications, you can always contact our support."
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/space10"
+                android:textSize="@dimen/text_size_18"
+                android:textColor="@color/colorBlueDark"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space20"
+                android:layout_marginBottom="@dimen/space20"
+                android:background="@drawable/layout_background_popup"
+                android:text="Contact Our Support"
+                android:padding="@dimen/space10"
+                android:onClick="openMailSupportDialog"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorWhite"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Read the instructions carefully before reviewing our app, instead contact our support for quick resolution."
+                android:textSize="@dimen/text_size_20"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/space10"
+                android:textColor="@color/colorRedDark" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FAQ's"
+                android:layout_gravity="start"
+                android:textSize="@dimen/text_size_20"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlueDark"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/space10"
+                android:layout_marginBottom="@dimen/space20"
+                android:background="@color/colorGray">
+            </View>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1) My Coins not Getting Counted?"
+                android:textSize="@dimen/text_size_20"
+                android:layout_gravity="start"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlueDark" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space10"
+                android:text="Make sure you are connected to internet with good bandwidth while playing the game, else your coins won't be counted."
+                android:textSize="@dimen/text_size_18"
+                android:layout_gravity="start"
+                android:layout_marginBottom="@dimen/space10"
+                android:textColor="@color/colorBlueDark" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2) How Coins are Calculated?"
+                android:textSize="@dimen/text_size_20"
+                android:layout_gravity="start"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlueDark" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space10"
+                android:text="All the coins are calculated based on the score you make in each game you play, which is then consolidated with our policy to convert them into currency(cash out to your bank accounts)."
+                android:textSize="@dimen/text_size_18"
+                android:layout_gravity="start"
+                android:textColor="@color/colorBlueDark" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space10"
+                android:text="Coins division for each score is as follows:"
+                android:textSize="@dimen/text_size_18"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorBlueDark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:weightSum="3"
+                android:layout_marginTop="@dimen/space10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:text="Section"
+                    android:textSize="@dimen/text_size_18"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlueDark" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:text="Score"
+                    android:textSize="@dimen/text_size_18"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlueDark" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:text="Multiplier"
+                    android:textSize="@dimen/text_size_18"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlueDark" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:weightSum="3"
+                android:layout_marginTop="@dimen/space10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:text="1"
+                    android:textSize="@dimen/text_size_18"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorBlueDark" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:text=">5 - 50"
+                    android:textSize="@dimen/text_size_18"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorBlueDark" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:text="0.0625"
+                    android:textSize="@dimen/text_size_18"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorBlueDark" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:weightSum="3"
+                android:layout_marginTop="@dimen/space10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:text="2"
+                    android:textSize="@dimen/text_size_18"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorBlueDark" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:text="50 - 100"
+                    android:textSize="@dimen/text_size_18"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorBlueDark" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:text="0.125"
+                    android:textSize="@dimen/text_size_18"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorBlueDark" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:weightSum="3"
+                android:layout_marginTop="@dimen/space10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:text="3"
+                    android:textSize="@dimen/text_size_18"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorBlueDark" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:text=">100"
+                    android:textSize="@dimen/text_size_18"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorBlueDark" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:text="0.250"
+                    android:textSize="@dimen/text_size_18"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorBlueDark" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/space10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:text="Example:"
+                    android:textSize="@dimen/text_size_18"
+                    android:layout_gravity="start"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlueDark" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:text="Assume you have scored 80"
+                    android:textSize="@dimen/text_size_18"
+                    android:layout_gravity="start"
+                    android:textColor="@color/colorBlueDark"
+                    android:layout_marginStart="@dimen/space10"
+                    android:layout_marginLeft="@dimen/space10"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space10"
+                android:text="80 falls under section 2 of coins policy"
+                android:textSize="@dimen/text_size_18"
+                android:layout_gravity="start"
+                android:textColor="@color/colorBlueDark" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space10"
+                android:text="Out of 80, first 50 will get calculated with multiplier from section 1 (0.0625)"
+                android:textSize="@dimen/text_size_18"
+                android:layout_gravity="start"
+                android:textColor="@color/colorBlueDark" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/space10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:text="Part-1: "
+                    android:textSize="@dimen/text_size_18"
+                    android:layout_gravity="start"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlueDark" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:text="50 x 0.0625 = 3.125 Coins"
+                    android:textSize="@dimen/text_size_18"
+                    android:layout_gravity="start"
+                    android:textColor="@color/colorBlueDark" />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space10"
+                android:text="Now the remaining 20 (i.e 80-50) will be multiplier from section 2 (0.125)"
+                android:textSize="@dimen/text_size_18"
+                android:layout_gravity="start"
+                android:textColor="@color/colorBlueDark" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/space10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:text="Part-2: "
+                    android:textSize="@dimen/text_size_18"
+                    android:layout_gravity="start"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlueDark" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:text="20 x 0.125 = 2.5 Coins"
+                    android:textSize="@dimen/text_size_18"
+                    android:layout_gravity="start"
+                    android:textColor="@color/colorBlueDark" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="start"
+                android:layout_marginTop="@dimen/space10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:text="Total Earned: "
+                    android:textSize="@dimen/text_size_18"
+                    android:layout_gravity="start"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlueDark" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space10"
+                    android:text="3.125 + 2.5 = 5.63 Coins"
+                    android:textSize="@dimen/text_size_18"
+                    android:layout_gravity="start"
+                    android:textColor="@color/colorBlueDark" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/space10"
+                android:background="@color/colorGray">
+            </View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space20"
+                android:text="3) How Many Days to Get My Money Credited?"
+                android:textSize="@dimen/text_size_18"
+                android:layout_gravity="start"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlueDark" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space10"
+                android:layout_marginBottom="@dimen/space20"
+                android:text="Your amount will be credited to your PayPal account provided within 5-7 business days in a standard procedure depending on your country."
+                android:textSize="@dimen/text_size_18"
+                android:layout_gravity="start"
+                android:textColor="@color/colorBlueDark" />
+
+            <TextView
+                android:id="@+id/faq_dynamic_add1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space20"
+                android:text=""
+                android:textSize="@dimen/text_size_18"
+                android:layout_gravity="start"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlueDark" />
+
+            <TextView
+                android:id="@+id/faq_dynamic_add1_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space10"
+                android:layout_marginBottom="@dimen/space20"
+                android:text=""
+                android:textSize="@dimen/text_size_18"
+                android:layout_gravity="start"
+                android:textColor="@color/colorBlueDark" />
+
+            <TextView
+                android:id="@+id/faq_dynamic_add2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space20"
+                android:text=""
+                android:textSize="@dimen/text_size_18"
+                android:layout_gravity="start"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlueDark" />
+
+            <TextView
+                android:id="@+id/faq_dynamic_add2_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space10"
+                android:layout_marginBottom="@dimen/space20"
+                android:text=""
+                android:textSize="@dimen/text_size_18"
+                android:layout_gravity="start"
+                android:textColor="@color/colorBlueDark" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space40"
+        android:background="@color/colorBlueDark">
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

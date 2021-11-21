@@ -1,0 +1,125 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'applovin-quality-service'
+applovin {
+    apiKey "lTNXyJ_v4waE3aiT40wquGZnxvyyb69fn2xg7Zxe8lNdATTJhTSrtNlZNGPi_FGT7ZJnsyStaiHhAlorgWtJQ0"
+}
+android {
+
+    signingConfigs {
+        release {
+            storeFile file('D:\\Keystore\\cashiflygame.jks')
+            storePassword 'android'
+            keyAlias 'key0'
+            keyPassword 'android'
+        }
+    }
+    compileSdkVersion 30
+    defaultConfig {
+        configurations.all {
+            resolutionStrategy { force 'androidx.core:core:1.6.0' }
+        }
+        applicationId "com.kingleader.cashybird"
+        minSdkVersion 16
+        targetSdkVersion 30
+        versionCode 10
+        versionName '1.9.0'
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //noinspection GradleCompatible
+
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'com.google.ads.mediation:facebook:6.7.0.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
+    implementation 'com.google.firebase:firebase-analytics:19.0.2'
+    implementation 'com.google.firebase:firebase-messaging:22.0.0'
+    implementation 'com.google.firebase:firebase-config:21.0.1'
+    implementation 'com.google.firebase:firebase-inappmessaging-display:20.1.0'
+    implementation 'com.google.firebase:firebase-ads:20.4.0'
+    implementation platform('com.google.firebase:firebase-bom:28.2.0')
+    implementation 'com.google.firebase:firebase-database:20.0.2'
+    implementation 'com.google.android.material:material:1.4.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
+    implementation 'androidx.browser:browser:1.3.0'
+    implementation 'androidx.media:media:1.4.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.ads:mediation-test-suite:2.0.0'
+//     flatbuffers
+    implementation 'com.google.firebase:firebase-auth:21.0.1'
+    implementation 'com.google.firebase:firebase-firestore:23.0.4'
+    implementation 'com.google.android.gms:play-services-ads:20.4.0'
+    implementation 'androidx.annotation:annotation:1.2.0'
+    implementation 'com.facebook.android:facebook-android-sdk:11.0.0'
+    implementation 'com.applovin:applovin-sdk:10.3.1'
+    implementation 'com.applovin.mediation:adcolony-adapter:4.5.0.0'
+    implementation 'com.applovin.mediation:inmobi-adapter:9.9.9.4'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'androidx.browser:browser:1.3.0'
+
+
+    // Vungle SDK
+    implementation 'com.vungle:publisher-sdk-android:6.9.1'
+
+    implementation 'androidx.core:core:1.7.0'
+    implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.0.0'
+
+    // When appcompat is being used, core and localbroadcastmanager are the dependencies
+    // that is getting included
+    // implementation 'androidx.appcompat:appcompat:1.2.0'
+
+    // Recommended for SDK to be able to get Android Advertising ID
+    implementation 'com.google.android.gms:play-services-basement:17.6.0'
+    implementation 'com.google.android.gms:play-services-ads-identifier:17.1.0'
+    implementation 'com.karumi:dexter:6.2.3'
+    implementation "com.airbnb.android:lottie:3.7.1"
+    implementation 'com.adcolony:sdk:4.5.0'
+    implementation 'com.google.android.gms:play-services-ads-identifier:17.1.0'
+    implementation 'com.google.android.gms:play-services-location:18.0.0'
+    implementation 'com.google.android.gms:play-services-ads-identifier:17.1.0'
+    implementation 'com.google.android.ads.consent:consent-library:1.0.8'
+
+    
+//    implementation 'com.applovin.mediation:tapjoy-adapter:12.8.1.0'
+
+
+//    implementation 'com.applovin:applovin-sdk:10.3.1'
+//    implementation 'com.applovin.mediation:adcolony-adapter:4.5.0.0'
+//    implementation 'com.applovin.mediation:inmobi-adapter:9.9.9.4'
+//    implementation 'com.squareup.picasso:picasso:2.71828'
+//    implementation 'com.applovin.mediation:tapjoy-adapter:12.8.1.0'
+//    implementation 'com.tapjoy:tapjoy-android-sdk:12.8.1'
+//    implementation files('libs/tapjoyconnectlibrary.jar')
+//
+}
+
+//buildscript {
+//    repositories{
+//        google()
+//        mavenCentral()
+//    }
+//    dependencies {
+//        classpath 'com.android.tools.build:gradle:7.2.1'
+//    }
+//}

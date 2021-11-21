@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_main1"
+    android:background="@drawable/main_back"
+    android:keepScreenOn="true">
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="143dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-4dp"
+        android:layout_marginLeft="-4dp"
+        android:layout_marginTop="-4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+
+        android:layout_marginBottom="592dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="31dp"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginEnd="194dp"
+            android:layout_marginRight="194dp"
+            android:layout_marginBottom="626dp"
+            android:layout_toStartOf="@+id/imageView2"
+            android:layout_toLeftOf="@+id/imageView2"
+            android:contentDescription="TODO"
+            android:src="@mipmap/shareconround" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="34dp"
+            android:layout_marginEnd="21dp"
+            android:layout_marginRight="21dp"
+            android:layout_marginBottom="626dp"
+            android:onClick="ProfileEditActivityInit"
+            android:src="@mipmap/personround" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/playbtnlyt"
+        android:layout_width="match_parent"
+        android:layout_height="232dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="4dp"
+
+        android:layout_marginLeft="4dp"
+        android:layout_marginEnd="-4dp"
+        android:layout_marginRight="-4dp"
+        android:layout_marginBottom="350dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/cashybird_text"
+            android:layout_width="374dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:src="@drawable/cashybirdtext" />
+
+        <ImageView
+            android:id="@+id/imageButton2"
+            android:layout_width="169dp"
+            android:layout_height="133dp"
+            android:layout_gravity="center"
+            android:onClick="startGame"
+            android:src="@drawable/playbtngreen" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rewardVideoImageLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="74dp"
+        android:layout_below="@+id/playbtnlyt"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="-381dp"
+        android:layout_marginEnd="-23dp"
+        android:layout_marginRight="-3dp"
+        android:background="@drawable/addcoinbtn"
+        android:onClick="displayRewardedVideo">
+
+        <ImageView
+            android:id="@+id/rewardVideoImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/dollarsign" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageBird"
+        android:layout_width="match_parent"
+        android:layout_height="387dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="195dp"
+        android:layout_marginLeft="-15dp"
+        android:layout_marginRight="-2dp"
+        android:layout_marginBottom="0dp"
+        android:src="@drawable/group3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rewardVideoImageLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="188dp"
+        android:layout_marginBottom="19dp"
+        android:orientation="horizontal"
+        android:paddingStart="5dp"
+        android:paddingLeft="5dp">
+
+        <ImageView
+            android:id="@+id/withdraw_moneybag"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginEnd="52dp"
+            android:layout_marginRight="52dp"
+            android:layout_marginBottom="-606dp"
+            android:layout_toStartOf="@+id/rating_btn"
+            android:layout_toLeftOf="@+id/rating_btn"
+            android:onClick="withdraw"
+            android:src="@drawable/group2257" />
+
+        <ImageView
+            android:id="@+id/rating_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="-606dp"
+            android:onClick="rateGame"
+            android:src="@drawable/group2256" />
+
+        <ImageView
+            android:id="@+id/leaderboardbtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="54dp"
+            android:layout_marginBottom="-606dp"
+            android:onClick="leaderBoardClicked"
+            android:src="@drawable/group2255" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/banner_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <LinearLayout
+            android:id="@+id/vungle_banner_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/adViewMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+        <!--       <com.applovin.mediation.ads.MaxAdView-->
+        <!--           android:layout_width="match_parent"-->
+        <!--           android:layout_height="@dimen/banner_height"-->
+        <!--           android:background="@color/colorWhite"-->
+        <!--           xmlns:maxads="http://schemas.applovin.com/android/1.0"-->
+        <!--           maxads:adUnitId="YOUR_AD_UNIT_ID"/>-->
+    </LinearLayout>
+</RelativeLayout>

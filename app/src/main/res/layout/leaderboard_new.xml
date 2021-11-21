@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back6"
+    android:keepScreenOn="true">
+
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/leaderboardtext"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:text="Leaderboard"
+            android:fontFamily="@font/fredoka_one"
+            android:textColor="@color/colorWhite"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/gemUserListLayout"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+
+        android:layout_below="@+id/topLayout"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="315dp"
+            android:layout_height="457dp"
+            android:layout_marginLeft="@dimen/space20"
+            android:layout_marginRight="@dimen/space20"
+            android:background="@drawable/ic_gameover"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+
+            <ListView
+                android:id="@+id/gemUserList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:paddingTop="35dp">
+
+
+            </ListView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/leaderBoardFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ad"
+        android:layout_below="@+id/gemUserListLayout"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="0dp"
+
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center_horizontal"
+        android:padding="0dp"
+        android:text="Every week top 10 gems will be announced!"
+        android:textAlignment="center"
+        android:textColor="@color/active_dots_visitsLikes"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:id="@+id/score_position_layout"
+        android:layout_width="match_parent"
+        android:layout_height="191dp"
+
+        android:layout_below="@+id/topLayout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="-30dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/scnd"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_vector"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="65dp"
+                android:orientation="vertical"
+                android:rotationX="-40"
+                android:rotationY="37">
+
+                <TextView
+                    android:id="@+id/scnd_position_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fredoka_one"
+                    android:lines="2"
+                    android:paddingStart="20dp"
+                    android:paddingLeft="20dp"
+                    android:text="Score : 1000"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/scnd_position_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fredoka_one"
+                    android:paddingLeft="35dp"
+                    android:text="2nd"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="24sp"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/first"
+            android:layout_width="130dp"
+
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-22dp"
+            android:background="@drawable/ic_vector__1_"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:orientation="vertical"
+                android:rotationX="0"
+                android:rotationY="0">
+
+                <TextView
+                    android:id="@+id/first_position_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fredoka_one"
+                    android:lines="2"
+                    android:paddingStart="20dp"
+                    android:paddingLeft="20dp"
+                    android:text="Score : 2000"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="14sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/first_position_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fredoka_one"
+                    android:paddingLeft="22dp"
+                    android:text="1st"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="34sp"
+                    android:textStyle="italic" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/third"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_vector__2_"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:orientation="vertical"
+                android:rotationX="-40"
+                android:rotationY="-41">
+
+                <TextView
+                    android:id="@+id/third_position_score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fredoka_one"
+                    android:lines="2"
+                    android:paddingLeft="20dp"
+                    android:text="Score : 800"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp"
+                    android:textStyle="italic" />
+
+                <TextView
+
+                    android:id="@+id/third_position_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fredoka_one"
+                    android:paddingLeft="20dp"
+                    android:text="3rd"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="24sp"
+                    android:textStyle="italic" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ad"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/vungle_banner_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/banner_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/adViewMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

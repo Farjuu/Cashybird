@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bluerectangle"
+    android:keepScreenOn="true">
+
+
+        <LinearLayout
+            android:id="@+id/coinsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="227dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/fredoka_one"
+                android:text="@string/total_earned_coins"
+                android:textColor="@color/colorWhite"
+                android:textSize="30sp"
+                android:textStyle="normal">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/totalCoinsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/fredoka_one"
+                android:text="01"
+                android:textColor="@color/colorGrey"
+                android:textSize="45sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    <ScrollView
+        android:layout_marginTop="250dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@drawable/white_rectangle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:fontFamily="@font/fredoka_one"
+                android:text="Select Payment Method"
+                android:textColor="#FFE95550"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_marginTop="@dimen/space40"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:cardBackgroundColor="@drawable/rectangle"
+                android:layout_margin="10dp">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_paypal"
+                    android:layout_width="160dp"
+                    app:cardElevation="5dp"
+                    android:layout_height="140dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="15dp"
+                    android:layout_weight="1">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="@dimen/space40"
+                            android:layout_margin="15dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/logo_paypal">
+                        </ImageView>
+                        <TextView
+
+                            android:paddingTop="@dimen/space30"
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="Paypal"
+                            android:layout_gravity="center"/>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:cardBackgroundColor="@drawable/rectangle"
+                    android:layout_margin="10dp">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_paytm"
+                    android:layout_width="160dp"
+                    app:cardElevation="5dp"
+                    android:layout_height="140dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="2dp"
+                    android:layout_margin="10dp"
+                    android:layout_marginRight="5dp"
+                    app:cardCornerRadius="15dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="@dimen/space40"
+                        android:layout_margin="15dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ic_paytm">
+                    </ImageView>
+                    <TextView
+                        android:paddingTop="@dimen/space30"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="Paytm"
+                        android:layout_gravity="center"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:cardBackgroundColor="@drawable/rectangle"
+                    android:layout_margin="10dp">
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_litacoin"
+                        android:layout_width="160dp"
+                        app:cardElevation="5dp"
+                        android:layout_gravity="center"
+                        android:layout_height="140dp"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="15dp"
+                        android:layout_weight="1">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="@dimen/space60"
+                                android:layout_margin="15dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/ic_litacoin">
+                            </ImageView>
+                            <TextView
+
+                                android:paddingTop="14dp"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:text="Litacoin"
+                                android:layout_gravity="center"/>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:cardBackgroundColor="@drawable/rectangle"
+                    android:layout_margin="10dp">
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_bitcoin"
+                        android:layout_width="160dp"
+                        app:cardElevation="5dp"
+                        android:layout_height="140dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="2dp"
+                        android:layout_margin="10dp"
+                        android:layout_marginRight="5dp"
+                        app:cardCornerRadius="15dp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginEnd="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="60dp"
+                                android:layout_margin="15dp"
+                                android:layout_gravity="center"
+                                android:background="@drawable/bitcoin">
+                            </ImageView>
+                            <TextView
+
+                                android:paddingTop="@dimen/space30"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:text="Bitcoin"
+                                android:layout_gravity="center"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

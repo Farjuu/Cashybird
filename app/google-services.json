@@ -1,0 +1,117 @@
+{
+  "project_info": {
+    "project_number": "968692801255",
+    "firebase_url": "https://cashifly-931a3-default-rtdb.firebaseio.com",
+    "project_id": "cashifly-931a3",
+    "storage_bucket": "cashifly-931a3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:968692801255:android:a798f182541beb7c404c42",
+        "android_client_info": {
+          "package_name": "com.kingleader.cashifly"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "968692801255-2aq6m6lfs89ap1anaqijigeebntq6qus.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kingleader.cashifly",
+            "certificate_hash": "e37b2cdeeae3b624f53617531876b5a6e7c96278"
+          }
+        },
+        {
+          "client_id": "968692801255-4ld9e9bbr7f6p5thhd5a7nf80d3q9ok7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kingleader.cashifly",
+            "certificate_hash": "fbc17fcac2773c7b7f4634c3aa6011c011a8b0b8"
+          }
+        },
+        {
+          "client_id": "968692801255-g4ujsl9ps64d49k4btuv7q7ijd2nedbf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kingleader.cashifly",
+            "certificate_hash": "c387cf50f3452afbf109b1e12b8ed8bde316d93f"
+          }
+        },
+        {
+          "client_id": "968692801255-kokam0qv5j6ql16im1fr950vn9aigtsd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kingleader.cashifly",
+            "certificate_hash": "1220c5d5e1b3b13f1f05266d4066ff2fd29fb58c"
+          }
+        },
+        {
+          "client_id": "968692801255-nqo6fu78cf9paq183jcuf131p75uq24u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kingleader.cashifly",
+            "certificate_hash": "7f451f7c00284fbee4748e98a7720ed1720587dd"
+          }
+        },
+        {
+          "client_id": "968692801255-8e75p6fbo031rq3dvc51qbqmrkabgn8t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcSgasr1axuVJuRsx0xQGZFLepxZDF25Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "968692801255-8e75p6fbo031rq3dvc51qbqmrkabgn8t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:968692801255:android:d49e195176d55b11404c42",
+        "android_client_info": {
+          "package_name": "com.kingleader.cashybird"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "968692801255-nb9fb96anup4kg6dor75a3or8eephbsu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kingleader.cashybird",
+            "certificate_hash": "c387cf50f3452afbf109b1e12b8ed8bde316d93f"
+          }
+        },
+        {
+          "client_id": "968692801255-8e75p6fbo031rq3dvc51qbqmrkabgn8t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcSgasr1axuVJuRsx0xQGZFLepxZDF25Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "968692801255-8e75p6fbo031rq3dvc51qbqmrkabgn8t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

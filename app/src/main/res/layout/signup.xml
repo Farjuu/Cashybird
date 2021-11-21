@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:background="@drawable/back5"
+    android:layout_height="match_parent">
+    <!--
+        <include layout="@layout/less_opacity_background" />-->
+
+    <ImageView
+        android:id="@+id/cashybirdtext"
+        android:layout_width="312dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginRight="47dp"
+        android:foregroundGravity="center"
+        android:src="@drawable/cashybirdtext" />
+
+    <EditText
+        android:id="@+id/editTextFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_below="@+id/cashybirdtext"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginRight="41dp"
+        android:background="@drawable/rectangle"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:hint="@string/first_name"
+        android:inputType="text"
+        android:paddingStart="20dp"/>
+
+    <EditText
+
+        android:id="@+id/editTextLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_below="@+id/editTextFirstName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginRight="41dp"
+        android:background="@drawable/rectangle"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:hint="@string/last_name"
+        android:inputType="text"/>
+
+    <EditText
+
+        android:id="@+id/editTextRegisterEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_below="@+id/editTextLastName"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginRight="41dp"
+        android:background="@drawable/rectangle"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:hint="@string/email_id"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+
+        android:id="@+id/editTextRegisterPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_below="@+id/editTextRegisterEmail"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginRight="41dp"
+        android:background="@drawable/rectangle"
+        android:ems="10"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"/>
+
+    <TextView
+        android:id="@+id/back_login"
+        android:layout_width="367dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="27dp"
+        android:fontFamily="@font/fredoka_one"
+        android:gravity="center"
+        android:minHeight="48dp"
+        android:text="@string/back_to_login"
+        android:onClick="back_loginClicked"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="195dp"
+        android:layout_height="68dp"
+        android:layout_above="@+id/back_login"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+
+        android:layout_marginStart="110dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginRight="106dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/signupredshape"
+        android:fontFamily="@font/fredoka_one"
+        android:onClick="registerButtonClicked"
+        android:text="@string/sign_up"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"/>
+
+
+</RelativeLayout>

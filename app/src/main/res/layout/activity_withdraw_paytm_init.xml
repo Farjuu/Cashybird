@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bluerectangle"
+    android:keepScreenOn="true">
+
+
+  <LinearLayout
+      android:id="@+id/coinsLayout"
+      android:layout_width="match_parent"
+      android:layout_height="230dp"
+      android:orientation="vertical"
+      android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_earned_coins"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="25dp"
+        android:textStyle="normal"
+        android:textSize="28sp"
+        android:fontFamily="@font/fredoka_one">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/totalCoinsWDInitTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="@dimen/space20"
+        android:textColor="@color/colorWhite"
+        android:textStyle="normal"
+        android:textSize="48sp"
+        android:fontFamily="@font/fredoka_one">
+
+    </TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@color/colorGray">
+    </View>
+
+  </LinearLayout>
+
+  <ScrollView
+      android:layout_marginTop="10dp"
+      android:layout_marginBottom="0dp"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@id/coinsLayout"
+      android:background="@drawable/white_rectangle">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:weightSum="2"
+          android:paddingStart="15dp"
+          android:paddingEnd="15dp"
+          android:gravity="center"
+          android:layout_gravity="center"
+          android:orientation="vertical">
+        <RelativeLayout
+            android:layout_margin="@dimen/space20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <LinearLayout
+              android:id="@+id/ll_paypal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+            <ImageView
+                android:id="@+id/iv_payment_img"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/ic_paytm">
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+
+                android:text="Please Enter your PayPal Account No to Process Payment"
+                android:textColor="#FF696F"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+
+                android:id="@+id/editTextPayPalEmail"
+                android:layout_width="match_parent"
+                android:layout_height="71dp"
+                android:layout_margin="@dimen/space10"
+                android:layout_marginTop="@dimen/space10"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rectangle"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="Account No..."
+                android:inputType="textEmailAddress"
+                android:padding="15dp"
+                android:paddingStart="20dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorGray"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/withdrawCoins"
+                android:layout_width="match_parent"
+                android:layout_height="79dp"
+                android:layout_margin="@dimen/space10"
+                android:layout_marginTop="@dimen/space10"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rectangle"
+                android:fontFamily="@font/poppins_medium"
+                android:hint="No of Coins"
+                android:inputType="textEmailAddress"
+
+                android:padding="15dp"
+                android:paddingStart="20dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorGray"
+                android:textStyle="bold" />
+          </LinearLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="209dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/space40"
+            android:layout_marginBottom="@dimen/space30"
+            android:background="@drawable/ic_group_2242"
+            android:fontFamily="@font/fredoka_one"
+            android:textSize="20sp"
+
+            android:gravity="center"
+            android:onClick="withdrawConfirmButton"
+            android:text="Withdraw"
+            android:textColor="@color/colorWhite">
+
+        </Button>
+
+      </LinearLayout>
+
+    </LinearLayout>
+
+  </ScrollView>
+
+
+</RelativeLayout>
